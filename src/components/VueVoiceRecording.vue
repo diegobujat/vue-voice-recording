@@ -95,7 +95,7 @@ const {
   afterStopRecording: (blob) => emits('afterStartRecording', blob),
   afterPauseRecording: () => emits('afterPauseRecording'),
   afterResumeRecording: () => emits('afterResumeRecording'),
-  getAsMp3: () => emits('getAsMp3'),
+  getAsMp3: (data) => emits('getAsMp3', data),
 });
 
 onMounted(() => {
